@@ -33,7 +33,7 @@
     {
       "id": "oreo",
       "name": "Galleta Oreo triturada",
-      "image": "/images/toppings/oreo.png",
+      "image": "/images/toppings/chispas-colores.png",
       "available": true
     },
     {
@@ -45,7 +45,7 @@
     {
       "id": "chispas-colores",
       "name": "Chispas de colores",
-      "image": "/images/toppings/chispas-colores.png",
+      "image": "/images/toppings/oreo.png",
       "available": true
     }
   ]
