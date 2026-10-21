@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "question": "¿Cómo puedo hacer mi pedido?",
+      "answer": "Puedes escribirnos directamente por WhatsApp al +504 9416-8855. Cuéntanos qué se te antoja y te confirmamos los detalles de tu pedido."
+    },
+    {
+      "question": "¿Trabajan por encargo?",
+      "answer": "Sí, puedes escribirnos por WhatsApp para consultar disponibilidad y coordinar tu encargo con anticipación."
+    },
+    {
+      "question": "¿Qué productos tienen disponibles?",
+      "answer": "Actualmente contamos con mini donas, waffles, churros, postres en vasito y horchata (en bolsa y en vaso). Puedes ver todo el detalle en la sección de menú."
+    },
+    {
+      "question": "¿Cómo puedo conocer los sabores disponibles?",
+      "answer": "Los sabores y opciones disponibles se confirman directamente por WhatsApp, ya que pueden variar. Escríbenos y te contamos qué tenemos disponible en ese momento."
+    },
+    {
+      "question": "¿Realizan entregas?",
+      "answer": "Contáctanos por WhatsApp para consultar disponibilidad de entrega según tu ubicación."
+    },
+    {
+      "question": "¿Dónde puedo recoger mi pedido?",
+      "answer": "El punto de recogida se coordina directamente por WhatsApp al momento de confirmar tu pedido."
+    }
+  ]
+}

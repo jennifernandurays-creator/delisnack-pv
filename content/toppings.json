@@ -1,0 +1,52 @@
+{
+  "toppings": [
+    {
+      "id": "chocolate",
+      "name": "Chocolate",
+      "image": "/images/toppings/chocolate.png",
+      "available": true
+    },
+    {
+      "id": "dulce-de-leche",
+      "name": "Dulce de leche",
+      "image": "/images/toppings/dulce-de-leche.png",
+      "available": true
+    },
+    {
+      "id": "leche-condensada",
+      "name": "Leche condensada",
+      "image": "/images/toppings/leche-condensada.png",
+      "available": true
+    },
+    {
+      "id": "fresa",
+      "name": "Fresa",
+      "image": "/images/toppings/fresa.png",
+      "available": true
+    },
+    {
+      "id": "banano",
+      "name": "Banano",
+      "image": "/images/toppings/banano.png",
+      "available": true
+    },
+    {
+      "id": "oreo",
+      "name": "Galleta Oreo triturada",
+      "image": "/images/toppings/oreo.png",
+      "available": true
+    },
+    {
+      "id": "chispas-chocolate",
+      "name": "Chispas de chocolate",
+      "image": "/images/toppings/chispas-chocolate.png",
+      "available": true
+    },
+    {
+      "id": "chispas-colores",
+      "name": "Chispas de colores",
+      "image": "/images/toppings/chispas-colores.png",
+      "available": true
+    }
+  ]
+}

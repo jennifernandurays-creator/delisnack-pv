@@ -1,0 +1,99 @@
+backend:
+  name: git-gateway
+  branch: main
+
+publish_mode: simple
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+locale: "es"
+
+collections:
+  - name: "settings"
+    label: "Ajustes generales"
+    files:
+      - name: "settings"
+        label: "Marca, WhatsApp y redes sociales"
+        file: "content/settings.json"
+        fields:
+          - { label: "Nombre de la marca", name: "brandName", widget: "string" }
+          - { label: "Frase de marca (tagline)", name: "tagline", widget: "string" }
+          - { label: "Título para pestaña del navegador (SEO)", name: "metaTitle", widget: "string" }
+          - { label: "Descripción para buscadores (SEO)", name: "metaDescription", widget: "text" }
+          - { label: "Título principal del inicio", name: "heroTitle", widget: "string" }
+          - { label: "Descripción bajo el título principal", name: "heroSubtitle", widget: "text" }
+          - { label: "Título de la sección \"Sobre nosotros\"", name: "aboutTitle", widget: "string" }
+          - { label: "Texto principal de \"Sobre nosotros\"", name: "aboutText", widget: "text" }
+          - { label: "Número de WhatsApp (solo dígitos, con código de país)", name: "whatsappNumber", widget: "string", pattern: ["^[0-9]+$", "Solo números, sin espacios ni símbolos"] }
+          - { label: "Número de WhatsApp (formato visible)", name: "whatsappDisplay", widget: "string" }
+          - { label: "Mensaje automático general de WhatsApp", name: "whatsappDefaultMessage", widget: "string" }
+          - { label: "Mensaje automático para consultar toppings", name: "whatsappToppingsMessage", widget: "string" }
+          - { label: "Usuario de Instagram", name: "instagramHandle", widget: "string" }
+          - { label: "Enlace de Instagram", name: "instagramUrl", widget: "string" }
+          - { label: "Usuario de TikTok", name: "tiktokHandle", widget: "string" }
+          - { label: "Enlace de TikTok", name: "tiktokUrl", widget: "string" }
+          - { label: "Enlace de Facebook", name: "facebookUrl", widget: "string" }
+          - { label: "Enlace de YouTube", name: "youtubeUrl", widget: "string" }
+          - { label: "Correo electrónico", name: "email", widget: "string" }
+          - { label: "Frase corta del footer", name: "footerNote", widget: "string" }
+
+  - name: "products"
+    label: "Menú y productos"
+    files:
+      - name: "products"
+        label: "Categorías y productos del menú"
+        file: "content/products.json"
+        fields:
+          - label: "Categorías"
+            name: "categories"
+            widget: "list"
+            summary: "{{name}}"
+            fields:
+              - { label: "Identificador (no cambiar si ya existe)", name: "id", widget: "string" }
+              - { label: "Nombre de la categoría", name: "name", widget: "string" }
+              - { label: "Etiqueta corta (para tarjetas y pestañas)", name: "shortLabel", widget: "string" }
+              - { label: "Descripción de la categoría", name: "description", widget: "text" }
+              - { label: "Fotografía de la categoría", name: "image", widget: "image" }
+              - label: "Productos de esta categoría"
+                name: "items"
+                widget: "list"
+                summary: "{{name}}"
+                fields:
+                  - { label: "Identificador (no cambiar si ya existe)", name: "id", widget: "string" }
+                  - { label: "Nombre del producto", name: "name", widget: "string" }
+                  - { label: "Descripción corta", name: "description", widget: "text" }
+                  - { label: "Fotografía", name: "image", widget: "image" }
+                  - { label: "Precio (déjalo vacío para mostrar \"Precio próximamente\")", name: "price", widget: "number", required: false, value_type: "float" }
+                  - { label: "Mostrar en \"Los favoritos de DeliSnack\"", name: "featured", widget: "boolean", default: false }
+                  - { label: "Se puede personalizar con toppings", name: "customizable", widget: "boolean", default: true }
+
+  - name: "toppings"
+    label: "Toppings"
+    files:
+      - name: "toppings"
+        label: "Personaliza tu antojo — lista de toppings"
+        file: "content/toppings.json"
+        fields:
+          - label: "Toppings"
+            name: "toppings"
+            widget: "list"
+            summary: "{{name}}"
+            fields:
+              - { label: "Identificador (no cambiar si ya existe)", name: "id", widget: "string" }
+              - { label: "Nombre del topping", name: "name", widget: "string" }
+              - { label: "Imagen del topping", name: "image", widget: "image" }
+              - { label: "Disponible", name: "available", widget: "boolean", default: true }
+
+  - name: "faq"
+    label: "Preguntas frecuentes"
+    files:
+      - name: "faq"
+        label: "Preguntas y respuestas"
+        file: "content/faq.json"
+        fields:
+          - label: "Preguntas"
+            name: "items"
+            widget: "list"
+            summary: "{{question}}"
+            fields:
+              - { label: "Pregunta", name: "question", widget: "string" }
+              - { label: "Respuesta", name: "answer", widget: "text" }

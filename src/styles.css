@@ -1,0 +1,82 @@
+@import "tailwindcss" source("../");
+
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap");
+
+@theme {
+  --color-cream: #fffaf4;
+  --color-cream-soft: #fdeee2;
+  --color-blush: #fbe3e6;
+  --color-primary: #e2536b;
+  --color-primary-dark: #c33c53;
+  --color-primary-light: #f7a8b6;
+  --color-caramel: #b5773f;
+  --color-caramel-dark: #8a5a30;
+  --color-sage: #7fa583;
+  --color-ink: #3d2b22;
+  --color-ink-soft: #6b5548;
+
+  --font-display: "Fredoka", "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background-color: var(--color-cream);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+* {
+  scrollbar-color: var(--color-primary-light) transparent;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Scroll-reveal primitive used by <Reveal> */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+.decorative-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(2px);
+  pointer-events: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

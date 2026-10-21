@@ -1,0 +1,121 @@
+{
+  "categories": [
+    {
+      "id": "mini-donas",
+      "name": "Mini donas",
+      "shortLabel": "Mini donas",
+      "description": "Bocaditos suaves de dona, bañados con salsas y toppings para un antojo rápido.",
+      "image": "/images/products/mini-donas.jpg",
+      "items": [
+        {
+          "id": "mini-donas-clasicas",
+          "name": "Mini donas",
+          "description": "Bocaditos suaves de dona bañados con salsas y toppings, perfectos para compartir.",
+          "image": "/images/products/mini-donas.jpg",
+          "price": null,
+          "featured": true,
+          "customizable": true
+        }
+      ]
+    },
+    {
+      "id": "waffles",
+      "name": "Waffles",
+      "shortLabel": "Waffles",
+      "description": "Waffles recién hechos, listos para acompañar con fruta y toppings.",
+      "image": "/images/products/waffles.jpg",
+      "items": [
+        {
+          "id": "waffles-clasicos",
+          "name": "Waffles",
+          "description": "Waffles dorados y crocantes por fuera, suaves por dentro, servidos con fruta fresca.",
+          "image": "/images/products/waffles.jpg",
+          "price": null,
+          "featured": false,
+          "customizable": true
+        }
+      ]
+    },
+    {
+      "id": "churros",
+      "name": "Churros",
+      "shortLabel": "Churros",
+      "description": "Churros crujientes bañados con un toque dulce, ideales para cualquier antojo.",
+      "image": "/images/products/churros.jpg",
+      "items": [
+        {
+          "id": "churros-clasicos",
+          "name": "Churros",
+          "description": "Crujientes por fuera y suaves por dentro, bañados con azúcar y canela.",
+          "image": "/images/products/churros.jpg",
+          "price": null,
+          "featured": false,
+          "customizable": true
+        }
+      ]
+    },
+    {
+      "id": "postres-vasito",
+      "name": "Postres en vasito",
+      "shortLabel": "Postres en vasito",
+      "description": "Postres en capas, listos para disfrutar con cuchara en mano.",
+      "image": "/images/products/postres-vasito.jpg",
+      "items": [
+        {
+          "id": "vasito-oreo",
+          "name": "Vasito Oreo",
+          "description": "Capas de galleta Oreo y crema en un vasito individual.",
+          "image": "/images/products/postres-vasito.jpg",
+          "price": null,
+          "featured": true,
+          "customizable": true
+        },
+        {
+          "id": "vasito-fresa",
+          "name": "Vasito de fresa",
+          "description": "Capas de fresa fresca, galleta y crema en un vasito individual.",
+          "image": "/images/products/postres-vasito.jpg",
+          "price": null,
+          "featured": false,
+          "customizable": true
+        }
+      ]
+    },
+    {
+      "id": "horchata-bolsa",
+      "name": "Horchata en bolsa",
+      "shortLabel": "Horchata en bolsa",
+      "description": "Horchata tradicional lista para llevar a donde quieras.",
+      "image": "/images/products/horchata-bolsa.jpg",
+      "items": [
+        {
+          "id": "horchata-bolsa-clasica",
+          "name": "Horchata en bolsa",
+          "description": "Horchata tradicional, práctica para llevar contigo.",
+          "image": "/images/products/horchata-bolsa.jpg",
+          "price": null,
+          "featured": false,
+          "customizable": false
+        }
+      ]
+    },
+    {
+      "id": "horchata-vaso",
+      "name": "Horchata en vaso",
+      "shortLabel": "Horchata en vaso",
+      "description": "Horchata cremosa servida con hielo, lista para tomar al momento.",
+      "image": "/images/products/horchata-vaso.jpg",
+      "items": [
+        {
+          "id": "horchata-vaso-clasica",
+          "name": "Horchata en vaso",
+          "description": "Horchata cremosa con hielo y un toque de canela, servida lista para disfrutar.",
+          "image": "/images/products/horchata-vaso.jpg",
+          "price": null,
+          "featured": true,
+          "customizable": false
+        }
+      ]
+    }
+  ]
+}
